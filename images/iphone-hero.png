@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 1000">
+  <defs>
+    <linearGradient id="bodyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2a2a2a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1a1a1a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f0f0f;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="screenGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#001a33;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#002d5c;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background glow -->
+  <circle cx="250" cy="500" r="300" fill="#FF6B6B" opacity="0.1" filter="url(#glow)"/>
+  
+  <!-- Phone body -->
+  <rect x="50" y="80" width="400" height="840" rx="50" fill="url(#bodyGradient)" stroke="#444" stroke-width="1"/>
+  
+  <!-- Titanium frame edges -->
+  <rect x="55" y="85" width="390" height="830" rx="48" fill="none" stroke="#666" stroke-width="0.5" opacity="0.8"/>
+  
+  <!-- Screen -->
+  <rect x="75" y="120" width="350" height="720" rx="40" fill="url(#screenGradient)"/>
+  
+  <!-- Dynamic Island -->
+  <rect x="185" y="135" width="130" height="50" rx="25" fill="#000" stroke="#333" stroke-width="1"/>
+  <circle cx="225" cy="160" r="6" fill="#0099ff" opacity="0.8"/>
+  <circle cx="275" cy="160" r="6" fill="#0099ff" opacity="0.8"/>
+  
+  <!-- Status bar icons -->
+  <text x="420" y="165" font-size="20" fill="#0099ff" font-weight="bold">9:41</text>
+  
+  <!-- Screen content -->
+  <g opacity="0.6">
+    <rect x="85" y="220" width="330" height="8" rx="4" fill="#0099ff"/>
+    <rect x="85" y="250" width="280" height="6" rx="3" fill="#00ccff" opacity="0.7"/>
+    <rect x="85" y="275" width="320" height="6" rx="3" fill="#00ccff" opacity="0.5"/>
+    
+    <!-- Camera preview -->
+    <circle cx="250" cy="380" r="60" fill="none" stroke="#0099ff" stroke-width="2" opacity="0.5"/>
+    <circle cx="250" cy="380" r="50" fill="#0099ff" opacity="0.1"/>
+    
+    <!-- App icons -->
+    <g opacity="0.8">
+      <rect x="120" y="480" width="45" height="45" rx="12" fill="#FF6B6B"/>
+      <rect x="190" y="480" width="45" height="45" rx="12" fill="#4ECDC4"/>
+      <rect x="260" y="480" width="45" height="45" rx="12" fill="#FFE66D"/>
+      
+      <rect x="120" y="555" width="45" height="45" rx="12" fill="#667eea"/>
+      <rect x="190" y="555" width="45" height="45" rx="12" fill="#00d4ff"/>
+      <rect x="260" y="555" width="45" height="45" rx="12" fill="#00ff88"/>
+    </g>
+  </g>
+  
+  <!-- Bottom speaker slots -->
+  <g stroke="#444" stroke-width="1" opacity="0.5">
+    <line x1="200" y1="800" x2="300" y2="800"/>
+    <line x1="200" y1="805" x2="300" y2="805"/>
+  </g>
+  
+  <!-- Bottom port -->
+  <rect x="230" y="830" width="40" height="8" rx="2" fill="#555" opacity="0.7"/>
+  
+  <!-- Reflection -->
+  <ellipse cx="150" cy="300" rx="40" ry="100" fill="white" opacity="0.05"/>
+  
+  <!-- Brand text -->
+  <text x="250" y="920" font-size="16" fill="#888" text-anchor="middle">iPhone 17 ProMax</text>
+</svg>

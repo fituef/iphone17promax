@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500">
+  <defs>
+    <linearGradient id="displayBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#001a4d;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a0a1a;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="screenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0066ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00ffff;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="400" height="500" fill="url(#displayBg)"/>
+  
+  <!-- Title -->
+  <text x="200" y="35" font-size="22" fill="#0099ff" text-anchor="middle" font-weight="bold">Display ProMotion</text>
+  <text x="200" y="60" font-size="13" fill="#666" text-anchor="middle">OLED Dynamic Island 120Hz</text>
+  
+  <!-- Phone frame -->
+  <g transform="translate(200, 220)">
+    <!-- Screen border -->
+    <rect x="-80" y="-100" width="160" height="200" rx="15" fill="#111" stroke="#0099ff" stroke-width="2"/>
+    
+    <!-- Screen content -->
+    <rect x="-75" y="-95" width="150" height="190" fill="url(#screenGrad)" opacity="0.3"/>
+    
+    <!-- Dynamic Island -->
+    <rect x="-40" y="-90" width="80" height="25" rx="12" fill="#000" stroke="#0099ff" stroke-width="1"/>
+    <circle x="-25" y="-78" r="4" fill="#0099ff"/>
+    <circle x="-5" y="-78" r="4" fill="#0099ff"/>
+    
+    <!-- Status display -->
+    <g opacity="0.8">
+      <line x1="-70" y1="-40" x2="70" y2="-40" stroke="#0099ff" stroke-width="2"/>
+      <line x1="-70" y1="-25" x2="70" y2="-25" stroke="#00ffff" stroke-width="1.5"/>
+      <line x1="-70" y1="-10" x2="60" y2="-10" stroke="#0099ff" stroke-width="1"/>
+      
+      <line x1="-70" y1="10" x2="70" y2="10" stroke="#0099ff" stroke-width="2"/>
+      <line x1="-70" y1="25" x2="70" y2="25" stroke="#00ffff" stroke-width="1.5"/>
+      <line x1="-70" y1="40" x2="55" y2="40" stroke="#0099ff" stroke-width="1"/>
+      
+      <line x1="-70" y1="60" x2="70" y2="60" stroke="#0099ff" stroke-width="2"/>
+    </g>
+  </g>
+  
+  <!-- Display Specs -->
+  <g>
+    <text x="20" y="420" font-size="12" fill="#0099ff" font-weight="bold">6.9" OLED Display</text>
+    <text x="20" y="438" font-size="11" fill="#999">2796 × 1290 pixels</text>
+    
+    <text x="20" y="463" font-size="12" fill="#0099ff" font-weight="bold">REFRESH RATE:</text>
+    <text x="20" y="481" font-size="11" fill="#999">120Hz ProMotion</text>
+    
+    <text x="200" y="463" font-size="12" fill="#0099ff" font-weight="bold">BRIGHTNESS:</text>
+    <text x="200" y="481" font-size="11" fill="#999">3000 nits Peak</text>
+  </g>
+</svg>

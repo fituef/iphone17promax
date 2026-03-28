@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5f5f5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e8e8e8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="400" height="500" fill="url(#bgGrad)"/>
+  
+  <!-- Title -->
+  <text x="200" y="35" font-size="22" fill="#1a1a1a" text-anchor="middle" font-weight="bold">Các Màu Sắc</text>
+  
+  <!-- Color 1: Midnight Black -->
+  <g>
+    <rect x="20" y="70" width="70" height="120" rx="10" fill="#0a0a0a" stroke="#999" stroke-width="1.5"/>
+    <rect x="27" y="80" width="56" height="90" rx="8" fill="#1a1a1a" stroke="#333" stroke-width="1"/>
+    <text x="55" y="210" font-size="13" fill="#333" text-anchor="middle" font-weight="600">Midnight Black</text>
+  </g>
+  
+  <!-- Color 2: Silver -->
+  <g>
+    <rect x="105" y="70" width="70" height="120" rx="10" fill="#e5e5e5" stroke="#999" stroke-width="1.5"/>
+    <rect x="112" y="80" width="56" height="90" rx="8" fill="#f0f0f0" stroke="#ddd" stroke-width="1"/>
+    <text x="140" y="210" font-size="13" fill="#333" text-anchor="middle" font-weight="600">Silver</text>
+  </g>
+  
+  <!-- Color 3: Gold -->
+  <g>
+    <rect x="190" y="70" width="70" height="120" rx="10" fill="#d4a574" stroke="#999" stroke-width="1.5"/>
+    <rect x="197" y="80" width="56" height="90" rx="8" fill="#f4d03f" stroke="#c9a227" stroke-width="1"/>
+    <text x="225" y="210" font-size="13" fill="#333" text-anchor="middle" font-weight="600">Gold</text>
+  </g>
+  
+  <!-- Color 4: Blue -->
+  <g>
+    <rect x="275" y="70" width="70" height="120" rx="10" fill="#0066cc" stroke="#999" stroke-width="1.5"/>
+    <rect x="282" y="80" width="56" height="90" rx="8" fill="#0099ff" stroke="#0052a3" stroke-width="1"/>
+    <text x="310" y="210" font-size="13" fill="#333" text-anchor="middle" font-weight="600">Blue</text>
+  </g>
+  
+  <!-- Color 5: Red -->
+  <g>
+    <rect x="62" y="280" width="70" height="120" rx="10" fill="#aa0000" stroke="#999" stroke-width="1.5"/>
+    <rect x="69" y="290" width="56" height="90" rx="8" fill="#ff3333" stroke="#880000" stroke-width="1"/>
+    <text x="97" y="420" font-size="13" fill="#333" text-anchor="middle" font-weight="600">Red</text>
+  </g>
+  
+  <!-- Color 6: Purple -->
+  <g>
+    <rect x="147" y="280" width="70" height="120" rx="10" fill="#6633cc" stroke="#999" stroke-width="1.5"/>
+    <rect x="154" y="290" width="56" height="90" rx="8" fill="#a855f7" stroke="#5528aa" stroke-width="1"/>
+    <text x="182" y="420" font-size="13" fill="#333" text-anchor="middle" font-weight="600">Purple</text>
+  </g>
+  
+  <!-- Color 7: Green -->
+  <g>
+    <rect x="232" y="280" width="70" height="120" rx="10" fill="#00aa44" stroke="#999" stroke-width="1.5"/>
+    <rect x="239" y="290" width="56" height="90" rx="8" fill="#00ff88" stroke="#008844" stroke-width="1"/>
+    <text x="267" y="420" font-size="13" fill="#333" text-anchor="middle" font-weight="600">Green</text>
+  </g>
+</svg>
